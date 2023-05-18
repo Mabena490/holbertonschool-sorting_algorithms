@@ -53,7 +53,7 @@ if (c->next->next != NULL)
 c->next = c->next->next;
 c->prev->next = c;
 c->next->prev = c;
-    }
+}
 else
 {
 c->next->next = c;
@@ -82,10 +82,10 @@ while (c->next != NULL)
 if (c->n > c->next->n)
 {
 swap_forward(c);
-	}
+}
 else
 c = c->next;
-    }
+}
 while ((*list)->prev != NULL)
 *list = (*list)->prev;
 }
